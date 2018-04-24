@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Frond End Challenge | FInding Falcone | Geektrust</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.PNG">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/newstyle.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+           <a class="navbar-brand" href="#"><img src="assets/images/favicon.png"></a>
+            <div class="navbar-header">
+                
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.geektrust.in">GEEKTRUST </a></li>
+                    <li><a href="#" onclick="myFunction()">RESET</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Finding Falcone</h3>
+        <h5>Select the planets you want to search in : </h5>
+        <div class="row" id="selectBox">
+
+
+            <div class="col-sm-3">
+                <select class="form-control" id='box1' onchange="on_dropdown_change('box1','planetName1','vehicleSelect1','timeTaken1','name1','value1','list1')">
+                    <option value="Disabled" >Choose Planets</option>
+            </select>
+                <input type="text" id="name1" hidden>
+                <input type="text" id="value1" hidden>
+            </div>
+            <div class="col-sm-3">
+                <select class="form-control" id='box2' onchange="on_dropdown_change('box2','planetName2','vehicleSelect2','timeTaken2','name2','value2','list2')">
+                    <option value="Disabled">Choose Planets</option>
+              </select>
+                <input type="text" id="name2" hidden>
+                <input type="text" id="value2" hidden>
+            </div>
+            <div class="col-sm-3">
+                <select class="form-control" id='box3' onchange="on_dropdown_change('box3','planetName3','vehicleSelect3','timeTaken3','name3','value3','list3')">
+                    <option value="Disabled">Choose Planets</option>
+              </select>
+                <input type="text" id="name3" hidden>
+                <input type="text" id="value3" hidden>
+            </div>
+            <div class="col-sm-3">
+                <select class="form-control" id='box4' onchange="on_dropdown_change('box4','planetName4','vehicleSelect4','timeTaken4','name4','value4','list4')">
+                    <option value="Disabled">Choose Planets</option>
+               </select>
+                <input type="text" id="name4" hidden>
+                <input type="text" id="value4" hidden>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+        <div class="row" id="hide">
+
+            <h3 class="margin">Select the space vehicles</h3>
+            <p id="time" style="text-align:center">Max time - <span id="totalTimeTaken"></span></p><br>
+
+            <div id="result">
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 id="planetName1"></h3>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 id="timeTaken1"></h3>
+                        </div>
+                    </div>
+                    <div id="vehicleSelect1"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 id="planetName2"></h3>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 id="timeTaken2"></h3>
+                        </div>
+                    </div>
+                    <div id="vehicleSelect2"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 id="planetName3"></h3>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 id="timeTaken3"></h3>
+                        </div>
+                    </div>
+                    <div id="vehicleSelect3"></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3 id="planetName4"></h3>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 id="timeTaken4"></h3>
+                        </div>
+                    </div>
+                    <div id="vehicleSelect4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row" id="bottom">
+            <button id="findFalcone" class="redButton redButton2" disabled="disabled">Find Falcone</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="text-center fixed">
+            Made with <i class="fas fa-coffee"></i> &amp; <i class="fas fa-music"></i> 
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/newjs.js"></script>
+    <script>
+        function myFunction() {
+            location.reload();
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #000000;
+
+}
+
+p {
+    font-size: 16px;
+}
+
+.margin {
+    margin-bottom: 45px;
+}
+
+.bg-1 {
+    background-color: #1abc9c;
+    /* Green */
+    color: #ffffff;
+}
+
+.bg-2 {
+    background-color: #474e5d;
+    /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #ffffff;
+    /* White */
+    color: #555555;
+
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    /* Black Gray */
+    color: #fff;
+}
+
+.container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    
+}
+
+.navbar-nav li a:hover {
+    color: #1485ee !important;
+}
+
+.navbar-brand > img {
+    height: 50px;
+    width: 50px;
+    position: absolute
+}
+nav.navbar.navbar-default{
+    background-color: #666666;
+   
+}
+li a ,footer{
+    color: #fff !important
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+}
+#vehicleSelect1, #vehicleSelect2,#vehicleSelect3,#vehicleSelect4{
+    text-align: left;
+    padding-left: 50px
+}
+#newTab h2,h4 {
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-weight: normal
+}
+.redButton {
+    background-color: red;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+
+.greenButton {
+    background-color: #67C100;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.redButton2:hover {
+    box-shadow: 0 12px 16px 0 #0000003d, 0 17px 50px 0 #00000030;
+}
+
+.greenButton:hover {
+    box-shadow: 0 12px 16px 0 #0000003d, 0 17px 50px 0 #00000030;
+}
+
+label {
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px
+}
+
+#planetName1,
+#planetName2,
+#planetName3,
+#planetName4 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+:disabled {
+    opacity: 0.3;
+}
+
+.blink_me {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
